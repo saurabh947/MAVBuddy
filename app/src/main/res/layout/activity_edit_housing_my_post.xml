@@ -1,0 +1,341 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcome"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="27dp"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView11"
+        android:layout_below="@+id/TextView11"
+        android:layout_marginTop="10dp"
+        android:text="@string/aptName"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView09"
+        android:layout_below="@+id/TextView09"
+        android:layout_marginTop="10dp"
+        android:text="@string/noOfPerson"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView08"
+        android:layout_below="@+id/TextView08"
+        android:layout_marginTop="15dp"
+        android:text="@string/inDate"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView07"
+        android:layout_below="@+id/TextView07"
+        android:layout_marginTop="15dp"
+        android:text="@string/outDate"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView06"
+        android:layout_below="@+id/TextView06"
+        android:layout_marginTop="10dp"
+        android:text="@string/roomFor"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView05"
+        android:layout_below="@+id/TextView05"
+        android:layout_marginTop="10dp"
+        android:text="@string/rent"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView04"
+        android:layout_below="@+id/TextView04"
+        android:layout_marginTop="10dp"
+        android:text="@string/mobile"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView03"
+        android:layout_below="@+id/TextView03"
+        android:layout_marginTop="10dp"
+        android:text="@string/emailid"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="10dp"
+        android:text="@string/comments"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView11"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:hint="Your name" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView10"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12sp" 
+        android:hint="Title of post" />
+
+    <EditText
+        android:id="@+id/aptName"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView12"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:hint="Name" />
+
+    <Spinner
+        android:id="@+id/typeOfApt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView09"
+        android:layout_below="@+id/aptName"
+        android:layout_toRightOf="@+id/TextView09"
+        android:entries="@array/typeOfApt" />
+
+    <Spinner
+        android:id="@+id/typeOfAccom"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView08"
+        android:layout_alignLeft="@+id/typeOfApt"
+        android:layout_below="@+id/typeOfApt"
+        android:entries="@array/typeOfAccom" />
+
+    <EditText
+        android:id="@+id/noOfPerson"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView07"
+        android:layout_below="@+id/typeOfAccom"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12sp"
+        android:hint="Persons required" />
+
+    <Button
+        android:id="@+id/moveInDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView06"
+        android:layout_below="@+id/noOfPerson"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:textSize="12sp"
+        android:hint="mm-dd-yyyy"
+        android:gravity="left"
+        android:onClick="showMoveInDatePickerDialog"  />
+
+    <Button
+        android:id="@+id/moveOutDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView05"
+        android:layout_below="@+id/moveInDate"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:textSize="12sp"
+        android:hint="mm-dd-yyyy"
+        android:gravity="left"
+        android:onClick="showMoveOutDatePickerDialog" />
+
+    <EditText
+        android:id="@+id/rent"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView03"
+        android:layout_below="@+id/TextView05"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        android:hint="Calculated rent" />
+
+    <EditText
+        android:id="@+id/mobileNo"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView02"
+        android:layout_below="@+id/rent"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12sp"
+        android:hint="Your Mob No." />
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_below="@+id/mobileNo"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        android:hint="Your E-mail" />
+
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_below="@+id/emailId"
+        android:layout_toRightOf="@+id/TextView09"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="12sp"
+        android:hint="Additional details" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/TextView02"
+        android:onClick="updatePost"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignLeft="@+id/comments"
+        android:onClick="cancelEdit"
+        android:text="@string/cancel" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rent"
+        android:layout_below="@+id/moveOutDate" 
+        android:orientation="horizontal"
+        android:checkedButton="@+id/radioMale">
+
+        <RadioButton
+        android:id="@+id/radioMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/male" />
+        
+        <RadioButton
+        android:id="@+id/radioFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/editYourPost"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TextView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView10"
+        android:layout_below="@+id/TextView10"
+        android:layout_marginTop="16dp"
+        android:text="@string/typeOfApt"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/TextView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView12"
+        android:layout_below="@+id/TextView12"
+        android:layout_marginTop="18dp"
+        android:text="@string/typeOfAccom"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+</RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RidesFragment">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:contentDescription="@string/add"
+        android:onClick="addRidesPost"
+        android:src="@android:drawable/ic_input_add" />
+
+     <RadioGroup
+         android:id="@+id/radioGroup1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/welcome"
+         android:layout_centerHorizontal="true"
+         android:orientation="horizontal" >
+
+         <RadioButton
+             android:id="@+id/radioButton2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/request" />
+
+         <RadioButton
+             android:id="@+id/radioButton1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/post" />
+     </RadioGroup>
+
+     <TextView
+         android:id="@+id/welcome"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/searchRides"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="19dp"
+         android:text="@string/select"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <EditText
+         android:id="@+id/searchRides"
+         android:layout_width="170dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/imageButton1"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="18dp"
+         android:ems="10"
+         android:inputType="text" >
+
+         <requestFocus />
+     </EditText>
+
+     <ImageButton
+         android:id="@+id/imageButton1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/radioGroup1"
+         android:layout_toRightOf="@+id/searchRides"
+         android:contentDescription="@string/search"
+         android:src="@android:drawable/ic_menu_search" 
+         android:onClick="searchRidesPost"/>
+
+      <TextView
+          android:id="@+id/keywordRides"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/searchRides"
+          android:layout_below="@+id/searchRides"
+          android:text="@string/keywordRides"
+          android:textSize="12sp"
+          android:textColor="@color/grey"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <TextView
+          android:id="@+id/searchRidesResult"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/keywordRides"
+          android:layout_alignParentBottom="true"
+          android:text=""
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/grey"
+          android:textSize="14sp" />
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView><!-- From: file:/C:/Users/Saurabh/Documents/AndroidStudioProjects/MAVBuddy/app/src/main/res/layout/fragment_rides.xml -->

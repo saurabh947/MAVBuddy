@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EventsFragment">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+     <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="17dp"
+        android:src="@android:drawable/ic_input_add" 
+        android:contentDescription="@string/add"
+        android:onClick="addEventPost"/>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/searchEvent"
+        android:src="@android:drawable/ic_menu_search" 
+        android:contentDescription="@string/search"
+        android:onClick="searchEventPost"/>
+
+    <EditText
+        android:id="@+id/searchEvent"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:inputType="text" />
+    <TextView
+          android:id="@+id/keywordEvents"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/searchEvent"
+          android:layout_below="@+id/searchEvent"
+          android:text="@string/keywordEvents"
+          android:textSize="12sp"
+          android:textColor="@color/grey"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/searchEventsResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/keywordEvents"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>
